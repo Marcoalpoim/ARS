@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+ <head>
+ <title>ARS.</title>
+ <meta name="description" content="HTML tutorial">
+ <meta name="keywords"
+content="HTML,CSS,XML,JavaScript">
+ <meta name="author" content="Marco Alpoim">
+ <meta http-equiv="refresh" content="30">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=
+1.0">
+
+ <link rel="stylesheet" type="text/css" href="css/MYSTYLE.css">
+
+ </head>
+ …
+<!---Content starts here -->
+<body>
+ <header>
+  <a id="menu_icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+    </svg>
+  </a>
+
+  <div id="drawer">
+    <nav>
+    <a href="#Portuguese Urban Art Artists"> Portuguese Urban Art Artists </a>
+    <a href="#Art Expression"> Art Expression</a>
+    <a href="#art gallery"> Art Gallery</a>
+    <a href="#video"> Video Tags</a>
+    <a href="#table"> Table Tags</a>
+    </nav>
+  </div>
+<br>
+ <h1>ARS.</h1>
+ <p> Find your favourite urban art here! </p>
+<br>
+</header>
+
+<BR>
+ <nav id="tabletPC" class="col-3">
+ <a href="#Portuguese Urban Art Artists"> Portuguese Urban Art Artists</a>
+ <br>
+ <a href="#Art Expression"> Art Expression</a>
+ <br>
+ <a href="#art gallery"> Art Gallery</a>
+ <br>
+ <a href="#video"> Video</a>
+ <br>
+ <a href="#table"> table tags</a>
+</nav> 
+
+ <div id="container" class="col-9">
+
+ <section>
+ <a name="Portuguese Urban Art Artists"> 
+  <br>
+ <h2> Portuguese urban art artists </h2>
+ <br>
+ <p>Here you can find some of the best portuguese urban art 
+   artists around the world like:</p>
+ <ul>
+ <li> C215, </li>
+ <li> Akacorleone,</li>
+ <li> Bordallo II,</li>
+ <li> Odeith, </li>
+ <li> Vhils, </li>
+ <li> Pixel Pancho, </li>
+ <li> And many more. </li>
+ <br>
+ </ul>
+</section>
+<section>
+ <a name="Art Expression">
+  <br>
+ <h2> Art Expression </h2>
+ <br>
+ <p> There are many forms of artistic expressions </p>
+ <ul>
+ <li><u> Painting and drawing; </u></li>
+ <li><u> Sculping and modeling; </u></li>
+ <li><u> Creative writing; </u></li>
+ <li><u> photography; </u></li>
+ <li><u> design; </u></li>
+ <li><u> graffiti; </u></li>
+ <li><u> And many more. </u></li>
+ </ul>
+<br>
+</section>
+<BR>
+<section>
+ <a name="art gallery"> 
+   <br>
+ <h2>Urban Art gallery</h2>
+ <br>
+ <p> Urban art gallery exibition </p>
+ <br>
+
+ <p> </p>
+ <img width="1200" height="auto"src = 
+ "akacorleone.jpg"> 
+ <p> </p>
+ <img width="1200" height="auto"src = 
+ "odeith.jpg"> 
+ <p> </p>
+ <img width="1200" height="auto"src = 
+ "bordallo.jpg"
+<p> </p>
+</section>
+
+<Br>
+
+<section>
+ <a name="video">
+ <br>
+ <h2>Video</h2>
+ <p> Urban art route </p>
+<br>
+
+ <video width="1200" height="auto" controls>
+  <source src="video 1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+ </video>
+
+
+</section>
+
+<p> </p>
+
+ <section>
+ <a name="table">
+ <br>
+ <h2>Table</h2>
+ <br>
+ <table border="1px">
+    <th colspan="3"> Heading </th>
+    <tr>
+    <td> Column 1 </td> <td> Column 2 </td> <td> Column 3 </td>
+    </tr>
+    <tr>
+    <td rowspan="4"> Cell Spanning in 3 Rows (2nd and 3rd merged)</td>
+    <td rowspan="3"> Cell Spanning in 2 Rows (1st and 2nd Cell merged) </
+   td>
+    <td> 1st Cell </td>
+    </tr>
+    <tr>
+    <td> 2nd Cell </td>
+    </tr>
+    <tr>
+    <td> 3rd Cell </td>
+    </tr>
+    <tr>
+    <td> 3rd Cell </td> <td> 4th Cell </td>
+    </tr>
+   </table>
+   <br>
+  </section>
+
+<Br>
+ </div>
+ 
+  <aside class="col-2">
+  <h3>Aside</h3>
+  <p>...
+ </p>
+  </aside>
+ <br>
+  <footer>
+  <h2>Developed by Marco Alpoim</h2>
+  </footer> 
+… 
+<script>
+
+let menu_icon = document.querySelector('#menu_icon');
+let container = document.querySelector("#container");
+let drawer = document.querySelector('#drawer');
+menu_icon.addEventListener('click', function (e) {
+drawer.classList.toggle('open');
+e.stopPropagation();
+});
+container.addEventListener('click', function () {
+drawer.classList.remove('open');
+});
+
+</script>
+ </body>
+<!---Content ends here -->
+</html> 
